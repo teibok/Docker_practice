@@ -13,11 +13,11 @@ WORKDIR /app
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt gunicorn
 
 # Copy the application code
 COPY . .
-
+ENV TESSERACT_PATH=/usr/bin/tesseract
 # Expose Flask port
 EXPOSE 5000
 
