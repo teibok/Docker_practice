@@ -1,0 +1,9 @@
+Experiment/
+venv/
+__pychache__/
+docker_practice/__pychache__/
+docker_practice/routes/__pycache__/
+docker_practice/services/__pycache__/
+docker_practice/databases/__pycache__/
+.env
+migrations/
